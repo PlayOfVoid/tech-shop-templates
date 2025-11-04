@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Объявление типа документа - говорит браузеру, что это HTML5 -->
+<html lang="ru">
+<!-- Открывающий тег HTML с указанием языка страницы (русский) -->
+<head>
+    <!-- Секция head содержит мета-информацию о странице, невидимую для пользователя -->
+    <meta charset="UTF-8">
+    <!-- Устанавливает кодировку символов UTF-8 для корректного отображения русских букв -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Настройка адаптивности - страница будет масштабироваться под разные размеры экранов -->
+    <title>TechStore - Магазин Техники</title>
+    <!-- Заголовок страницы, отображается во вкладке браузера -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключение внешнего файла со стилями CSS -->
+</head>
+<body>
+    <!-- Основное тело страницы - здесь размещается весь видимый контент -->
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <!-- header - семантический тег для шапки сайта, class="header" для стилизации -->
+        <div class="container">
+            <!-- div - универсальный контейнер для группировки элементов -->
+            <!-- container - класс для ограничения ширины контента -->
+            <div class="logo">
+                <!-- Блок для логотипа магазина -->
+                <h1 class="logo-text">TechStore</h1>
+                <!-- h1 - главный заголовок страницы (один на странице), logo-text - класс для стилизации -->
+                <span class="logo-glow">✨</span>
+                <!-- span - инлайн-элемент для маленького текста/иконки, glow - свечение -->
+            </div>
+            <nav class="nav">
+                <!-- nav - семантический тег для навигационного меню -->
+                <a href="#home" class="nav-link">Главная</a>
+                <!-- a - тег ссылки, href - адрес перехода, nav-link - класс для стилизации -->
+                <a href="#products" class="nav-link">Товары</a>
+                <a href="#about" class="nav-link">О нас</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главная секция с баннером -->
+    <section id="home" class="hero">
+        <!-- section - семантический тег для секции контента, id для якорной ссылки -->
+        <div class="hero-content">
+            <!-- Контент главной секции -->
+            <h2 class="hero-title">Добро пожаловать в TechStore</h2>
+            <!-- h2 - заголовок второго уровня -->
+            <p class="hero-subtitle">Современная техника с доставкой на дом</p>
+            <!-- p - параграф текста -->
+            <button class="cta-button">Смотреть каталог</button>
+            <!-- button - кнопка для действий пользователя, cta (call-to-action) - призыв к действию -->
+        </div>
+        <div class="floating-shapes">
+            <!-- Контейнер для декоративных анимированных элементов -->
+            <div class="shape shape-1"></div>
+            <!-- Пустые div для создания декоративных фигур через CSS -->
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Секция с товарами -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Наши товары</h2>
+            <!-- Заголовок секции -->
+            
+            <div class="products-grid">
+                <!-- Сетка для расположения товаров в ряд (grid layout) -->
+                
+                <!-- Карточка товара 1 -->
+                <div class="product-card">
+                    <!-- Карточка отдельного товара -->
+                    <div class="product-image">
+                        <!-- Контейнер для изображения товара -->
+                        <span class="product-badge">Новинка</span>
+                        <!-- Бейдж для обозначения новинки -->
+                        <div class="product-placeholder">📱</div>
+                        <!-- Заглушка изображения (эмодзи) -->
+                    </div>
+                    <div class="product-info">
+                        <!-- Информация о товаре -->
+                        <h3 class="product-name">Смартфон Pro X</h3>
+                        <!-- h3 - заголовок третьего уровня, название товара -->
+                        <p class="product-description">Современный смартфон с продвинутой камерой</p>
+                        <!-- Описание товара -->
+                        <div class="product-price">₽ 49,999</div>
+                        <!-- Цена товара -->
+                        <button class="buy-button">Купить</button>
+                        <!-- Кнопка покупки -->
+                    </div>
+                </div>
+
+                <!-- Карточка товара 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Хит</span>
+                        <!-- Бейдж для популярного товара -->
+                        <div class="product-placeholder">💻</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Ноутбук Ultra</h3>
+                        <p class="product-description">Мощный ноутбук для работы и игр</p>
+                        <div class="product-price">₽ 89,999</div>
+                        <button class="buy-button">Купить</button>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge sale">Скидка</span>
+                        <!-- Бейдж со скидкой, класс sale для особой стилизации -->
+                        <div class="product-placeholder">🎧</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Наушники Elite</h3>
+                        <p class="product-description">Беспроводные наушники с шумоподавлением</p>
+                        <div class="product-price">₽ 12,999</div>
+                        <button class="buy-button">Купить</button>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Новинка</span>
+                        <div class="product-placeholder">⌚</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Умные часы</h3>
+                        <p class="product-description">Фитнес-трекер с мониторингом здоровья</p>
+                        <div class="product-price">₽ 24,999</div>
+                        <button class="buy-button">Купить</button>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge">Хит</span>
+                        <div class="product-placeholder">📷</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Камера Pro</h3>
+                        <p class="product-description">Профессиональная камера для съемки</p>
+                        <div class="product-price">₽ 129,999</div>
+                        <button class="buy-button">Купить</button>
+                    </div>
+                </div>
+
+                <!-- Карточка товара 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-badge sale">Скидка</span>
+                        <div class="product-placeholder">🖥️</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Монитор 4K</h3>
+                        <p class="product-description">Большой монитор с высоким разрешением</p>
+                        <div class="product-price">₽ 34,999</div>
+                        <button class="buy-button">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "О нас" -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">О нашем магазине</h2>
+            <div class="about-content">
+                <!-- Контент секции "О нас" -->
+                <div class="about-text">
+                    <!-- Текстовый блок -->
+                    <p>Мы - ведущий магазин техники с более чем 10-летним опытом работы.</p>
+                    <!-- Параграф с информацией -->
+                    <p>Наша миссия - предоставить вам лучшую технику по доступным ценам.</p>
+                    <p>Мы гарантируем качество и быструю доставку по всей стране.</p>
+                </div>
+                <div class="features">
+                    <!-- Список особенностей/преимуществ -->
+                    <div class="feature-item">
+                        <!-- Отдельный пункт особенности -->
+                        <span class="feature-icon">🚚</span>
+                        <!-- Иконка особенности -->
+                        <h3>Быстрая доставка</h3>
+                        <p>Доставка в течение 24 часов</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✅</span>
+                        <h3>Гарантия качества</h3>
+                        <p>Официальная гарантия на все товары</p>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">💳</span>
+                        <h3>Удобная оплата</h3>
+                        <p>Различные способы оплаты</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <!-- Информация для связи -->
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <p>+7 (999) 123-45-67</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <p>info@techstore.ru</p>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <p>Москва, ул. Техническая, д. 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <!-- footer - семантический тег для подвала сайта -->
+        <div class="container">
+            <p>&copy; 2024 TechStore. Все права защищены.</p>
+            <!-- &copy; - HTML-сущность для символа авторского права © -->
+        </div>
+    </footer>
+
+</body>
+</html>
+<!-- Закрывающий тег HTML - конец документа -->
+
+
+
